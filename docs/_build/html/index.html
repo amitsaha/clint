@@ -2,17 +2,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Welcome to OSXPython.org &mdash; osxpython v0.0.1 documentation</title>
+    <title>Welcome to Clint’s Documentation! &mdash; clint 0.3.0 documentation</title>
+    
     <link rel="stylesheet" href="_static/flasky.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '',
-        VERSION:     '0.0.1',
+        VERSION:     '0.3.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -21,8 +24,8 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="osxpython v0.0.1 documentation" href="#" />
-    <link rel="next" title="Properly Installing Python" href="installation.html" />
+    <link rel="top" title="clint 0.3.0 documentation" href="#" />
+    <link rel="next" title="Getting Started with Clint" href="howto.html" />
    
   
   <link media="only screen and (max-device-width: 480px)" href="_static/small_flask.css" type= "text/css" rel="stylesheet" />
@@ -36,9 +39,9 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="installation.html" title="Properly Installing Python"
+          <a href="howto.html" title="Getting Started with Clint"
              accesskey="N">next</a> |</li>
-        <li><a href="#">osxpython v0.0.1 documentation</a> &raquo;</li> 
+        <li><a href="#">clint 0.3.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -47,50 +50,62 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="welcome-to-osxpython-org">
-<h1>Welcome to OSXPython.org<a class="headerlink" href="#welcome-to-osxpython-org" title="Permalink to this headline">¶</a></h1>
-<p>Welcome to OSXPython.org. This site exists to provide both novice and expert Python developers using OS X a best-practice handbook to the installation, configuration, and usage of Python on a daily basis.</p>
-<div class="section" id="user-s-guide">
-<h2>User&#8217;s Guide<a class="headerlink" href="#user-s-guide" title="Permalink to this headline">¶</a></h2>
-<p>This part of the documentation, which is mostly prose, begins with some
-background information about Flask, then focuses on step-by-step
-instructions for web development with Flask.</p>
+  <div class="section" id="welcome-to-clint-s-documentation">
+<h1>Welcome to Clint&#8217;s Documentation!<a class="headerlink" href="#welcome-to-clint-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Welcome to Clint.</p>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Properly Installing Python</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#package-manager">Package Manager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#python-interpreter">Python Interpreter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#distribute-pip">Distribute &amp; Pip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto.html">Getting Started with Clint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="howto.html#installing-clint">Installing Clint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="howto.html#printing-in-color">Printing in color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="howto.html#text-formatting-functions">Text Formatting Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="howto.html#progress-bar-functionality">Progress bar functionality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="howto.html#prompting">Prompting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="howto.html#argument-parsing">Argument Parsing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="howto.html#working-with-pipes">Working with Pipes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="howto.html#configuration-files">Configuration files</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="useful-tools.html">Useful Tools</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="useful-tools.html#ipython">IPython</a></li>
-<li class="toctree-l2"><a class="reference internal" href="useful-tools.html#bpython">BPython</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="shell.html">Working with the Shell</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="shell.html#diving-into-context-locals">Diving into Context Locals</a></li>
-<li class="toctree-l2"><a class="reference internal" href="shell.html#firing-before-after-request">Firing Before/After Request</a></li>
-<li class="toctree-l2"><a class="reference internal" href="shell.html#further-improving-the-shell-experience">Further Improving the Shell Experience</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="internals.html">Hacking Clint</a></li>
 </ul>
 </div>
 </div>
-<div class="section" id="api-reference">
-<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h2>
-<p>If you are looking for information on a specific function, class or
-method, this part of the documentation is for you.</p>
+<div class="section" id="api-documentation">
+<h2>API Documentation<a class="headerlink" href="#api-documentation" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
-<ul class="simple">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">clint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="clint.html">clint Package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="clint.html">clint Package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="clint.html#id1"><tt class="docutils literal"><span class="pre">clint</span></tt> Package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clint.html#arguments-module"><tt class="docutils literal"><span class="pre">arguments</span></tt> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clint.html#eng-module"><tt class="docutils literal"><span class="pre">eng</span></tt> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clint.html#pipes-module"><tt class="docutils literal"><span class="pre">pipes</span></tt> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clint.html#resources-module"><tt class="docutils literal"><span class="pre">resources</span></tt> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clint.html#utils-module"><tt class="docutils literal"><span class="pre">utils</span></tt> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clint.html#subpackages">Subpackages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="clint.packages.html">packages Package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="clint.packages.html#appdirs-module"><tt class="docutils literal"><span class="pre">appdirs</span></tt> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clint.packages.html#ordereddict-module"><tt class="docutils literal"><span class="pre">ordereddict</span></tt> Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clint.packages.html#subpackages">Subpackages</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 <div class="section" id="additional-notes">
 <h2>Additional Notes<a class="headerlink" href="#additional-notes" title="Permalink to this headline">¶</a></h2>
-<p>Design notes, legal information and changelog are here for the interested.</p>
+<p>Contribution notes and legal information are here for the interested.</p>
 <div class="toctree-wrapper compound">
-<ul class="simple">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
 </div>
 </div>
@@ -104,11 +119,11 @@ method, this part of the documentation is for you.</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="#">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Welcome to OSXPython.org</a><ul>
-<li><a class="reference internal" href="#user-s-guide">User&#8217;s Guide</a><ul>
+<li><a class="reference internal" href="#">Welcome to Clint&#8217;s Documentation!</a><ul>
+<li><a class="reference internal" href="#contents">Contents</a><ul>
 </ul>
 </li>
-<li><a class="reference internal" href="#api-reference">API Reference</a><ul>
+<li><a class="reference internal" href="#api-documentation">API Documentation</a><ul>
 </ul>
 </li>
 <li><a class="reference internal" href="#additional-notes">Additional Notes</a><ul>
@@ -120,7 +135,7 @@ method, this part of the documentation is for you.</p>
 <h3>Related Topics</h3>
 <ul>
   <li><a href="#">Documentation overview</a><ul>
-      <li>Next: <a href="installation.html" title="next chapter">Properly Installing Python</a></li>
+      <li>Next: <a href="howto.html" title="next chapter">Getting Started with Clint</a></li>
   </ul></li>
 </ul>
   <h3>This Page</h3>
@@ -131,7 +146,7 @@ method, this part of the documentation is for you.</p>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" size="18" />
+      <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
@@ -146,7 +161,7 @@ method, this part of the documentation is for you.</p>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy; Copyright 2010, Kenneth Reitz.
+      &copy; Copyright 2011, Kenneth Reitz (Documentation by Amit Saha).
       Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
     </div>
   </body>

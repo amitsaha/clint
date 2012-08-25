@@ -1,0 +1,159 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Getting Started with Clint &mdash; clint 0.3.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/flasky.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.3.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="clint 0.3.0 documentation" href="index.html" />
+    <link rel="next" title="clint" href="modules.html" />
+    <link rel="prev" title="Welcome to Clint’s Documentation!" href="index.html" />
+   
+  
+  <link media="only screen and (max-device-width: 480px)" href="_static/small_flask.css" type= "text/css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="modules.html" title="clint"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Clint’s Documentation!"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">clint 0.3.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="getting-started-with-clint">
+<h1>Getting Started with Clint<a class="headerlink" href="#getting-started-with-clint" title="Permalink to this headline">¶</a></h1>
+<p><tt class="docutils literal"><span class="pre">clint</span></tt> (Command Line INterface Tools) is a Python package providing
+a set of awesome tools for developing command line applications. It
+has support for printing in color, indented printing, column printer
+and a number of other features. Let&#8217;s get started.</p>
+<div class="section" id="installing-clint">
+<h2>Installing Clint<a class="headerlink" href="#installing-clint" title="Permalink to this headline">¶</a></h2>
+<p><tt class="docutils literal"><span class="pre">clint</span></tt> is installable via <tt class="docutils literal"><span class="pre">pip</span></tt>. On Fedora Linux, you would do
+<tt class="docutils literal"><span class="pre">sudo</span> <span class="pre">pip-python</span> <span class="pre">install</span> <span class="pre">clint</span></tt>.</p>
+</div>
+<div class="section" id="printing-in-color">
+<h2>Printing in color<a class="headerlink" href="#printing-in-color" title="Permalink to this headline">¶</a></h2>
+<p>We will explore <tt class="docutils literal"><span class="pre">clint's</span></tt> feature to print in color in this
+section. Consider the following script:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">clint.textui</span> <span class="kn">import</span> <span class="n">colored</span>
+
+<span class="n">text</span> <span class="o">=</span> <span class="s">&#39;THIS TEXT IS COLORED </span><span class="si">%s</span><span class="s">!&#39;</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>
+
+    <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="n">colored</span><span class="o">.</span><span class="n">COLORS</span><span class="p">:</span>
+        <span class="n">rint</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">colored</span><span class="p">,</span> <span class="n">color</span><span class="p">)(</span><span class="n">text</span> <span class="o">%</span> <span class="n">color</span><span class="o">.</span><span class="n">upper</span><span class="p">()))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="text-formatting-functions">
+<h2>Text Formatting Functions<a class="headerlink" href="#text-formatting-functions" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id1"><span class="problematic" id="id2">*</span></a>Indented printing
+<a href="#id3"><span class="problematic" id="id4">*</span></a>Column printing</p>
+</div>
+<div class="section" id="progress-bar-functionality">
+<h2>Progress bar functionality<a class="headerlink" href="#progress-bar-functionality" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="prompting">
+<h2>Prompting<a class="headerlink" href="#prompting" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="argument-parsing">
+<h2>Argument Parsing<a class="headerlink" href="#argument-parsing" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="working-with-pipes">
+<h2>Working with Pipes<a class="headerlink" href="#working-with-pipes" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="configuration-files">
+<h2>Configuration files<a class="headerlink" href="#configuration-files" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Getting Started with Clint</a><ul>
+<li><a class="reference internal" href="#installing-clint">Installing Clint</a></li>
+<li><a class="reference internal" href="#printing-in-color">Printing in color</a></li>
+<li><a class="reference internal" href="#text-formatting-functions">Text Formatting Functions</a></li>
+<li><a class="reference internal" href="#progress-bar-functionality">Progress bar functionality</a></li>
+<li><a class="reference internal" href="#prompting">Prompting</a></li>
+<li><a class="reference internal" href="#argument-parsing">Argument Parsing</a></li>
+<li><a class="reference internal" href="#working-with-pipes">Working with Pipes</a></li>
+<li><a class="reference internal" href="#configuration-files">Configuration files</a></li>
+</ul>
+</li>
+</ul>
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to Clint&#8217;s Documentation!</a></li>
+      <li>Next: <a href="modules.html" title="next chapter">clint</a></li>
+  </ul></li>
+</ul>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/howto.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2011, Kenneth Reitz (Documentation by Amit Saha).
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+    </div>
+  </body>
+</html>

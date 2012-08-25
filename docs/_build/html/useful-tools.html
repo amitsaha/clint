@@ -2,17 +2,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Useful Tools &mdash; osxpython v0.0.1 documentation</title>
+    <title>Useful Tools &mdash; clint 0.3.0 documentation</title>
+    
     <link rel="stylesheet" href="_static/flasky.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '',
-        VERSION:     '0.0.1',
+        VERSION:     '0.3.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -21,8 +24,8 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="osxpython v0.0.1 documentation" href="index.html" />
-    <link rel="next" title="Working with the Shell" href="shell.html" />
+    <link rel="top" title="clint 0.3.0 documentation" href="index.html" />
+    <link rel="next" title="Contribute" href="contribute.html" />
     <link rel="prev" title="Properly Installing Python" href="installation.html" />
    
   
@@ -37,12 +40,12 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="shell.html" title="Working with the Shell"
+          <a href="contribute.html" title="Contribute"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="installation.html" title="Properly Installing Python"
              accesskey="P">previous</a> |</li>
-        <li><a href="index.html">osxpython v0.0.1 documentation</a> &raquo;</li> 
+        <li><a href="index.html">clint 0.3.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -53,38 +56,15 @@
             
   <div class="section" id="useful-tools">
 <h1>Useful Tools<a class="headerlink" href="#useful-tools" title="Permalink to this headline">¶</a></h1>
-<p><em>For Python 2.7.</em></p>
-<p>One of the reasons everybody loves Python is the interactive shell.  It
-basically allows you to execute Python commands in real time and
-immediately get results back.  Flask itself does not come with an
-interactive shell, because it does not require any specific setup upfront,
-just import your application and start playing around.</p>
-<div class="highlight-python"><pre>$ pip install bpython</pre>
-</div>
-<p>And we can now install Python 2.7:</p>
-<div class="highlight-python"><pre>$</pre>
-</div>
-<p>The <strong>&#8211;framework</strong> option tells Python</p>
 <div class="section" id="ipython">
 <h2>IPython<a class="headerlink" href="#ipython" title="Permalink to this headline">¶</a></h2>
-<p>Say you have a utility function that returns the URL the user should be
-redirected to.  Imagine it would always redirect to the URL&#8217;s <tt class="docutils literal"><span class="pre">next</span></tt>
-parameter or the HTTP referrer or the index page:</p>
-<div class="highlight-python"><pre>$ curl -O http://python-distribute.org/distribute_setup.py
-$ python distribute_setup.py</pre>
+<div class="highlight-python"><pre>$ pip install ipython</pre>
 </div>
-<p>As you can see, it accesses the request object.  If you try to run this
-from a plain Python shell, this is the exception you will see:</p>
-<div class="highlight-python"><pre>$ easy_install pip</pre>
-</div>
-<p>Hopefully you&#8217;ll never have to use <strong>easy_install</strong> again.</p>
 </div>
 <div class="section" id="bpython">
 <h2>BPython<a class="headerlink" href="#bpython" title="Permalink to this headline">¶</a></h2>
-<p>By just creating a request context, you still don&#8217;t have run the code that
-is normally run before a request.  This probably results in your database
-being unavailable, the current user not being stored on the
-<tt class="xref py py-data docutils literal"><span class="pre">g</span></tt> object etc.</p>
+<div class="highlight-python"><pre>$ pip install bpython</pre>
+</div>
 </div>
 </div>
 
@@ -106,7 +86,7 @@ being unavailable, the current user not being stored on the
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
       <li>Previous: <a href="installation.html" title="previous chapter">Properly Installing Python</a></li>
-      <li>Next: <a href="shell.html" title="next chapter">Working with the Shell</a></li>
+      <li>Next: <a href="contribute.html" title="next chapter">Contribute</a></li>
   </ul></li>
 </ul>
   <h3>This Page</h3>
@@ -117,7 +97,7 @@ being unavailable, the current user not being stored on the
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" size="18" />
+      <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
@@ -132,7 +112,7 @@ being unavailable, the current user not being stored on the
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy; Copyright 2010, Kenneth Reitz.
+      &copy; Copyright 2011, Kenneth Reitz.
       Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
     </div>
   </body>

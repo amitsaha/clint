@@ -2,17 +2,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Properly Installing Python &mdash; osxpython v0.0.1 documentation</title>
+    <title>Properly Installing Python &mdash; clint 0.3.0 documentation</title>
+    
     <link rel="stylesheet" href="_static/flasky.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '',
-        VERSION:     '0.0.1',
+        VERSION:     '0.3.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -21,9 +24,9 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="osxpython v0.0.1 documentation" href="index.html" />
+    <link rel="top" title="clint 0.3.0 documentation" href="index.html" />
     <link rel="next" title="Useful Tools" href="useful-tools.html" />
-    <link rel="prev" title="Welcome to OSXPython.org" href="index.html" />
+    <link rel="prev" title="Welcome to Clint’s Documentation!" href="index.html" />
    
   
   <link media="only screen and (max-device-width: 480px)" href="_static/small_flask.css" type= "text/css" rel="stylesheet" />
@@ -40,9 +43,9 @@
           <a href="useful-tools.html" title="Useful Tools"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="index.html" title="Welcome to OSXPython.org"
+          <a href="index.html" title="Welcome to Clint’s Documentation!"
              accesskey="P">previous</a> |</li>
-        <li><a href="index.html">osxpython v0.0.1 documentation</a> &raquo;</li> 
+        <li><a href="index.html">clint 0.3.0 documentation</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -53,14 +56,16 @@
             
   <div class="section" id="properly-installing-python">
 <h1>Properly Installing Python<a class="headerlink" href="#properly-installing-python" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="mac-os-x">
+<h2>Mac OS X<a class="headerlink" href="#mac-os-x" title="Permalink to this headline">¶</a></h2>
 <p><em>Or, &#8220;Installing Python 2.7 via Homebrew&#8221;.</em></p>
-<p>One of the reasons everybody loves Python is the interactive shell.      It
+<p>One of the reasons everybody loves Python is the interactive shell.  It
 basically allows you to execute Python commands in real time and
 immediately get results back.  Flask itself does not come with an
 interactive shell, because it does not require any specific setup upfront,
 just import your application and start playing around.</p>
 <div class="section" id="package-manager">
-<h2>Package Manager<a class="headerlink" href="#package-manager" title="Permalink to this headline">¶</a></h2>
+<h3>Package Manager<a class="headerlink" href="#package-manager" title="Permalink to this headline">¶</a></h3>
 <p>While Snow Leopard comes with a large number of UNIX utilities, those
 familiar with Linux systems will notice one key component missing: a
 package manager. Mxcl&#8217;s <em>Homebrew</em> is the answer.</p>
@@ -70,19 +75,17 @@ package manager. Mxcl&#8217;s <em>Homebrew</em> is the answer.</p>
 <p>It&#8217;s basic commands are <strong>update</strong>, <strong>install</strong>, and <strong>remove</strong>.</p>
 </div>
 <div class="section" id="python-interpreter">
-<h2>Python Interpreter<a class="headerlink" href="#python-interpreter" title="Permalink to this headline">¶</a></h2>
+<h3>Python Interpreter<a class="headerlink" href="#python-interpreter" title="Permalink to this headline">¶</a></h3>
 <p>And we can now install Python 2.7:</p>
-<div class="highlight-python"><pre>$ sudo brew install python --framework</pre>
+<div class="highlight-python"><pre>$ brew install python --framework</pre>
 </div>
 <p>The <tt class="docutils literal"><span class="pre">--framework</span></tt> option tells Homebrew to compile a Framework-style Python build, rather than a UNIX-style build. The outdated version of Python that Snow Leopard comes packaged with
 is built as a Framework, so this helps avoid some future module installation
 bugs.</p>
 <p><em>Don&#8217;t forget to update your environment PATH.</em></p>
-<div class="highlight-python"><pre>$ echo 'EXPORT PATH=/usr/local/Cellar/python2.7/bin:$PATH' &gt;&gt; .profile</pre>
-</div>
 </div>
 <div class="section" id="distribute-pip">
-<h2>Distribute &amp; Pip<a class="headerlink" href="#distribute-pip" title="Permalink to this headline">¶</a></h2>
+<h3>Distribute &amp; Pip<a class="headerlink" href="#distribute-pip" title="Permalink to this headline">¶</a></h3>
 <p><em>Distribute</em> is a fantastic drop-in replacement for <em>easy_install</em> and
 <em>setuptools</em>. It allows you to install and manage python packages from
 pypi.python.org, amongst a few other sources. It also plays well with
@@ -103,6 +106,43 @@ $ easy_install pip</pre>
 <p>To install <tt class="docutils literal"><span class="pre">pip</span></tt>:</p>
 <p>Hopefully you&#8217;ll never have to use <strong>easy_install</strong> again.</p>
 </div>
+<div class="section" id="updating-python">
+<h3>Updating Python<a class="headerlink" href="#updating-python" title="Permalink to this headline">¶</a></h3>
+<p>Homebrew makes it simple.</p>
+<div class="highlight-python"><pre>$ brew update
+$ brew install --force python</pre>
+</div>
+</div>
+</div>
+<div class="section" id="windows">
+<h2>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="prerequisites">
+<h3>Prerequisites:<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Python2.7 (x86) from Python.org</li>
+<li>Microsoft Visual Studio</li>
+</ul>
+</div>
+<div class="section" id="step-1-install-distribute-pip">
+<h3>Step 1: Install Distribute &amp; Pip<a class="headerlink" href="#step-1-install-distribute-pip" title="Permalink to this headline">¶</a></h3>
+<p><strong>Distribute</strong> is a fantastic drop-in replacement for <strong>easy_install</strong> and <strong>setuptools</strong>. It allows you to install and manage python packages from PyPi, amongst a few other sources.</p>
+<dl class="docutils">
+<dt>To install it, run the python script available here:</dt>
+<dd>&lt;<a class="reference external" href="http://python-distribute.org/distribute_setup.py">http://python-distribute.org/distribute_setup.py</a>&gt;</dd>
+</dl>
+<p>Make sure that <tt class="docutils literal"><span class="pre">`C:\Python27\`</span></tt>, and  <tt class="docutils literal"><span class="pre">`C:\Python27\Scripts`</span></tt> are in your PATH.</p>
+<p><strong>easy_install</strong> is considered by many to be a deprecated system, so we will install it&#8217;s replacement: <strong>pip</strong>. Pip allows for uninstallation of packages, and is actively maintained, unlike setuptool&#8217;s easy_install.</p>
+<p>To install pip, simply run:</p>
+<div class="highlight-python"><pre>$ easy_install pip</pre>
+</div>
+</div>
+</div>
+<div class="section" id="linux-ubuntu">
+<h2>Linux (Ubuntu)<a class="headerlink" href="#linux-ubuntu" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="linux-manual">
+<h2>Linux (Manual)<a class="headerlink" href="#linux-manual" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -114,16 +154,27 @@ $ easy_install pip</pre>
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Properly Installing Python</a><ul>
+<li><a class="reference internal" href="#mac-os-x">Mac OS X</a><ul>
 <li><a class="reference internal" href="#package-manager">Package Manager</a></li>
 <li><a class="reference internal" href="#python-interpreter">Python Interpreter</a></li>
 <li><a class="reference internal" href="#distribute-pip">Distribute &amp; Pip</a></li>
+<li><a class="reference internal" href="#updating-python">Updating Python</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#windows">Windows</a><ul>
+<li><a class="reference internal" href="#prerequisites">Prerequisites:</a></li>
+<li><a class="reference internal" href="#step-1-install-distribute-pip">Step 1: Install Distribute &amp; Pip</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#linux-ubuntu">Linux (Ubuntu)</a></li>
+<li><a class="reference internal" href="#linux-manual">Linux (Manual)</a></li>
 </ul>
 </li>
 </ul>
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="index.html" title="previous chapter">Welcome to OSXPython.org</a></li>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to Clint&#8217;s Documentation!</a></li>
       <li>Next: <a href="useful-tools.html" title="next chapter">Useful Tools</a></li>
   </ul></li>
 </ul>
@@ -135,7 +186,7 @@ $ easy_install pip</pre>
 <div id="searchbox" style="display: none">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" size="18" />
+      <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
@@ -150,7 +201,7 @@ $ easy_install pip</pre>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy; Copyright 2010, Kenneth Reitz.
+      &copy; Copyright 2011, Kenneth Reitz.
       Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
     </div>
   </body>

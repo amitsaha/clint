@@ -1,32 +1,25 @@
 Contents
 --------
 
-This part of the documentation, which is mostly prose, begins with some
-background information about Clint, then focuses on step-by-step
-instructions for using Clint for development.
 
 .. toctree::
    :maxdepth: 2
 
-   foreword
-   installation
-   useful-tools
-   tutorial/index
-   templating
-   testing
-   errorhandling
-   config
-   signals
-   shell
-   patterns/index
-   deploying/index
-   becomingbig
-
+   howto
+   internals
+   
 
 API Documentation
 -----------------
 
-   api
+.. toctree::
+   :maxdepth: 2
+
+   modules
+   clint
+   clint.packages
+   clint.packages.colorma
+   clint.texttui
 
 
 Additional Notes

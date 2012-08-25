@@ -1,0 +1,10 @@
+Getting Started with Clint
+==========================
+
+``clint`` (Command Line INterface Tools) is a set of tools for
+developing command line applications. It has support for printing in
+color, indented printing, column printer and a number of other
+features. Let's get started.
+
+Installing Clint
+----------------
