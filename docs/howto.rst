@@ -24,7 +24,7 @@ section. Consider the following script::
      if __name__ == '__main__':
          
 	 for color in colored.COLORS:
-	     rint(getattr(colored, color)(text % color.upper()))
+	     print(getattr(colored, color)(text % color.upper()))
 
 
 Text Formatting Functions
