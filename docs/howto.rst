@@ -9,28 +9,53 @@ and a number of other features. Let's get started.
 Installing Clint
 ----------------
 
-``clint`` is installable via ``pip``. On Fedora Linux, you would do
+``clint`` is installed via ``pip``. On Fedora Linux, you would do
 ``sudo pip-python install clint``. 
 
 Printing in color
 -----------------
 We will explore ``clint's`` feature to print in color in this
-section. Consider the following script::
+section. Consider the following example::
 
-     from clint.textui import colored
+     >>> from clint.textui import puts, colored
+     >>> puts(colored.red('Text in Red'))
+     Text in Red 
 
-     text = 'THIS TEXT IS COLORED %s!'
+Note that the above text is in ``red``. Likewise, you can use the
+other colors. Consider the next script::
+
+     #!/usr/bin/env python
+     # Print text in all colors
+
+     from clint.textui import colored, puts
 
      if __name__ == '__main__':
+<<<<<<< HEAD
+=======
          
 	 for color in colored.COLORS:
 	     print(getattr(colored, color)(text % color.upper()))
+>>>>>>> 784b0da129a70312bfc3f79f8b35008b700a24a7
+
+        for color in colored.COLORS:
+                 puts(getattr(colored,color)('Text in {0:s}'.format(color.upper()))
+
+This script produces the following output::
+
+     Text in RED
+     Text in GREEN
+     Text in YELLOW
+     Text in BLUE
+     Text in BLACK
+     Text in MAGENTA
+     Text in CYAN
+     Text in WHITE
 
 
-Text Formatting Functions
--------------------------
+Indented printing
+-----------------
+Let's say you want to print indented text. Its simple with ``clint``:
 
-*Indented printing
 *Column printing
 
 
