@@ -82,7 +82,7 @@ def _indent_context():
     yield
     dedent()
 
-def indent(indent=4, quote=''):
+def indent(indent=4, quote='', indent_char=' '):
     """Indentation manager, return an indentation context manager."""
-    _indent(indent, quote)
+    _indent(indent, quote, indent_char)
     return _indent_context()
