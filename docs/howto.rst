@@ -30,13 +30,6 @@ other colors. Consider the next script::
      from clint.textui import colored, puts
 
      if __name__ == '__main__':
-<<<<<<< HEAD
-=======
-         
-	 for color in colored.COLORS:
-	     print(getattr(colored, color)(text % color.upper()))
->>>>>>> 784b0da129a70312bfc3f79f8b35008b700a24a7
-
         for color in colored.COLORS:
                  puts(getattr(colored,color)('Text in {0:s}'.format(color.upper()))
 
@@ -56,7 +49,8 @@ Indented printing
 -----------------
 Let's say you want to print indented text. Its simple with ``clint``:
 
-*Column printing
+Column printing
+---------------
 
 
 Progress bar functionality
